@@ -1,0 +1,3 @@
+[submodule "packages/static-service"]
+	path = packages/static-service
+	url = https://github.com/futanaichas/static-service.git
