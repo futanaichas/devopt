@@ -15,6 +15,9 @@ if ! [ $(basename `pwd`) = "devopt" ]; then
     fi
 fi 
 
+mkdir ./database/redis
+mkdir ./database/mysql
+
 bash ./ubuntu19.04/install_docker.sh
 bash ./ubuntu19.04/install_nginx.sh
 bash ./ubuntu19.04/install_mysql.sh
