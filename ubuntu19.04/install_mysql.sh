@@ -1,3 +1,4 @@
+mkdir ./database/mysql
 # 启动容器
 docker run \
 -p 3306:3306 \
