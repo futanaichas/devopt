@@ -9,12 +9,14 @@ fi
 # 判断路径
 if ! [ $(basename `pwd`) = "devopt" ]; then
     if [ ! -d "devopt" ];then
-        git clone https://github.com/futanaichas/devopt.git
+        git clone --recursive https://github.com/futanaichas/devopt.git
     fi
     cd devopt    
 fi
 # 更新
 git pull
+git submodule init
+git submodule update
 # 安装模块
 bash ./ubuntu19.04/install_docker.sh
 bash ./ubuntu19.04/install_mysql.sh
