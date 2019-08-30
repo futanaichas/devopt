@@ -10,4 +10,8 @@ docker run \
 -e MYSQL_ROOT_HOST=% \
 -d mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 #-v ~/devopt/config/mysql:/etc/mysql/conf.d \
-
+if ! [ -x "$(command -v mysql)" ]; then
+    apt install mysql-client -y
+fi
+mysql -uroot -h root 127.0.0.1 -pfutanaicha <<EOF
+EOF
