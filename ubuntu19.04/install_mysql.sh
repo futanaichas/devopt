@@ -13,5 +13,5 @@ docker run \
 if ! [ -x "$(command -v mysql)" ]; then
     apt install mysql-client -y
 fi
-mysql -uroot -h root 127.0.0.1 -pfutanaicha <<EOF
+mysql -uroot -h 127.0.0.1 -pfutanaicha <<EOF
 EOF
