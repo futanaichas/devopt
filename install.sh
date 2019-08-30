@@ -17,8 +17,8 @@ fi
 git pull
 # 安装模块
 bash ./ubuntu19.04/install_docker.sh
-bash ./ubuntu19.04/install_nginx.sh
 bash ./ubuntu19.04/install_mysql.sh
 bash ./ubuntu19.04/install_redis.sh
+bash ./ubuntu19.04/install_nginx.sh
 # 显示状态
 docker ps -a
