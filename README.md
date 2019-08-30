@@ -4,7 +4,7 @@
 ## How to use
 ```bash
 sudo apt install wget -y
-cd ~ && wget https://github.com/futanaichas/devopt/install.sh
+cd ~ && wget https://raw.githubusercontent.com/futanaichas/devopt/master/install.sh
 sudo chmod +x ./install.sh && sudo ./install.sh
 ```
 ## TODO
