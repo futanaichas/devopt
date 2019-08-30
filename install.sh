@@ -8,8 +8,12 @@ if ! [ -x "$(command -v git)" ]; then
 fi
 # 判断路径
 if ! [ $(basename `pwd`) = "devopt" ]; then
-    git clone https://github.com/futanaichas/devopt.git
-    cd devopt
-if 
+    if [ ! -d "devopt" ];then
+        git clone https://github.com/futanaichas/devopt.git
+        cd devopt
+    else
+        cd devopt && git pull
+    fi
+fi 
 
 bash ./ubuntu19.04/install_docker.sh
